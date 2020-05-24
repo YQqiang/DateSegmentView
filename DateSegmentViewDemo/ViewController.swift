@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         super.viewWillLayoutSubviews()
         view.addSubview(dateSegmentView)
         dateSegmentView.snp.remakeConstraints { (make) in
-            make.top.left.right.equalTo(self.view)
+            make.top.equalTo(self.topLayoutGuide.snp.bottom);
+            make.left.right.equalTo(self.view)
             make.height.equalTo(130)
         }
     }

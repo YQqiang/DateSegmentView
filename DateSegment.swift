@@ -158,7 +158,7 @@ extension DateSegment {
         }
         
         shadeView.addSubview(toolBar)
-        toolBar.backgroundColor = UIColor(colorLiteralRed: 242/255.0, green: 242/255.0, blue: 242/255.0, alpha: 10)
+        toolBar.backgroundColor = UIColor(red: 242/255.0, green: 242/255.0, blue: 242/255.0, alpha: 1.0)
         toolBar.snp.makeConstraints { (make) in
             make.left.right.equalTo(datePickerView)
             make.bottom.equalTo(datePickerView.snp.top)
